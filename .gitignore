@@ -1,0 +1,50 @@
+# 민감한 로컬 환경 변수 파일은 Git에 올리지 않습니다.
+.env
+.env.*
+!.env.example
+
+# Java 및 빌드 도구가 생성하는 결과물을 제외합니다.
+target/
+build/
+.gradle/
+out/
+*.class
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+
+# 소스 디렉터리 안의 이름이 같은 폴더는 빌드 결과물이 아니므로 포함합니다.
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IntelliJ IDEA, VS Code 등 개발 도구의 로컬 설정을 제외합니다.
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# STS/Eclipse가 생성하는 로컬 프로젝트 설정을 제외합니다.
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans가 생성하는 로컬 프로젝트 설정과 빌드 결과물을 제외합니다.
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# macOS가 자동으로 만드는 메타데이터 파일을 제외합니다.
+.DS_Store
+
+# 실행 중 생성되는 로그와 임시 파일을 제외합니다.
+*.log
+*.tmp
+
