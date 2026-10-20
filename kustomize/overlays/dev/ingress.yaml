@@ -22,5 +22,6 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - 'sk124-ingress.class-4.skala-us.com'
+    # 위 rules.host와 동일한 호스트를 사용해야 TLS 인증서가 올바르게 적용됩니다.
+    - 'sk124-myfirst-ingress.class-4.skala-us.com'
     secretName: wildcard-class-4-skala-us-com-tls
